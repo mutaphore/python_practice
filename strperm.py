@@ -27,6 +27,18 @@ def perm(s):
 
 if __name__ == '__main__':
     s = raw_input("Enter a string to permute: ")
-    p = perm(s)
-    print p
-    print "%d permutations" % len(p)
+    perms = perm(s)
+    print perms
+    print "%d permutations" % len(perms)
+
+#    a_b = []
+#    for perm in perms:
+#        if perm.index('b') > perm.index('a'):
+#            a_b.append(perm)            
+#    print "count %r \n%r" % (len(a_b), a_b)
+#
+#    a_c = []
+#    for perm in a_b:
+#        if perm.index('c') > perm.index('a'):
+#            a_c.append(perm)
+#    print "count %r \n%r" % (len(a_c), ",".join(a_c))
